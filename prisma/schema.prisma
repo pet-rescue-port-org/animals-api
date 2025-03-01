@@ -9,19 +9,18 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgres"
+  url      = env("DATABASE_URL")
 }
 
-
 model Animal {
-  id  String @id @default(cuid())
-  name String
-  species String
-  location String
-  adopted Boolean @default(false)
-  intakeDate DateTime @default(now())
-  outakeDate DateTime?
+  id          String    @id @default(cuid())
+  name        String
+  species     String
+  location    String
+  adopted     Boolean   @default(false)
+  intakeDate  DateTime  @default(now())
+  outakeDate  DateTime?
   description String?
   medicalInfo String?
 }

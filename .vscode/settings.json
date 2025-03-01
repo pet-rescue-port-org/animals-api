@@ -1,0 +1,31 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "pet-resuce-org",
+            "database": "animals",
+            "username": "admin",
+            "password": "admin",
+            "group": "local-postgres"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "ep-floral-dawn-a8slvsat-pooler.eastus2.azure.neon.tech",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "pet-rescue-org",
+            "group": "neon-deb",
+            "database": "animals",
+            "username": "neondb_owner",
+            "password": "npg_WZP2mtDL1Gqn"
+        }
+    ]
+}
